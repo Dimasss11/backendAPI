@@ -73,12 +73,13 @@ exports.createItemObject=function(obj){
     id: obj.id_product,
     created_at: obj.timestamp, 
     title: obj.title, 
-    price:  obj.price,
+    price: obj.price,
     image: obj.image_link,
     user_id: obj.id_user,
     user:{
       id: obj.id_user,
       phone: obj.phone,
+      name: obj.name,
       email: obj.email,
     } 
   };
