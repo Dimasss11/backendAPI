@@ -34,7 +34,7 @@ Request:
 Body:
 {
   "email": "email@example.com", 
-  "password”: "qwerty”
+  "password": "qwerty"
 }
 ```
 Responses:
@@ -42,7 +42,7 @@ Responses:
 200, OK
 Body:
 {
-  "token”: "eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A”
+  "token": "eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A"
 }
 
 422, Unprocessable Entity
@@ -59,10 +59,10 @@ Request:
 ```
 Body:
 {
-  “phone”: “+380xxxxxxxxx”, // optional
-  “name”: “Alex”, 
-  “email”: “alex@mail.com”, 
-  “password”:”qwerty”,
+  "phone": "+380xxxxxxxxx", // optional
+  "name": "Alex", 
+  "email": "alex@mail.com", 
+  "password":"qwerty",
 }
 
 ```
@@ -71,7 +71,7 @@ Responses:
 200, OK
 Body:
 {
-  "token”: "eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A”
+  "token": "eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A"
 }
 
 422, Unprocessable Entity
@@ -88,7 +88,7 @@ Request:
 ```
 Headers:
 {
-  “Authorization”: “eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A”
+  "Authorization": "eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A"
 }
 ```
 Responses:
@@ -96,9 +96,9 @@ Responses:
 200, OK
 Body:
 {
-  “id”: 1,
-  “phone”: “+380xxxxxxxxx”, “name”: “Alex”,
-  “email”: “alex@mail.com”
+  "id": 1,
+  "phone": "+380xxxxxxxxx", "name": "Alex",
+  "email": "alex@mail.com"
 }
 
 401, Unauthorized
@@ -111,16 +111,16 @@ Responses:
 ```
 200, OK
 [{
-  “id”: 1,
-  “created_at”: <timestamp in seconds>, 
-  “title”: “Notebook”, 
-  “price”: 5500.00,
-  “image”: “http://example.com/images//*.jpg”, 
-  “user_id”: 12,
-  “user”: {
-    “id”: 1,
-    “phone”: “+380xxxxxxxxx”, “name”: “Alex”,
-    “email”: “alex@mail.com”
+  "id": 1,
+  "created_at": <timestamp in seconds>, 
+  "title": "Notebook", 
+  "price": 5500.00,
+  "image": "http://example.com/images//*.jpg", 
+  "user_id": 12,
+  "user": {
+    "id": 1,
+    "phone": "+380xxxxxxxxx", "name": "Alex",
+    "email": "alex@mail.com"
   }
 }]
 ```
@@ -133,16 +133,16 @@ Responses:
 200, OK
 Body:
 {
-  “id”: 1,
-  “created_at”: <timestamp in seconds>, 
-  “title”: “Notebook”, 
-  “price”: 5500.00,
-  “image”: http://example.com/images/**/*.jpg”, 
-  “user_id”: 12,
-  “user”: {
-    “id”: 1,
-    “phone”: “+380xxxxxxxxx”, “name”: “Alex”,
-    “email”: “alex@mail.com”
+  "id": 1,
+  "created_at": <timestamp in seconds>, 
+  "title": "Notebook", 
+  "price": 5500.00,
+  "image": http://example.com/images/**/*.jpg", 
+  "user_id": 12,
+  "user": {
+    "id": 1,
+    "phone": "+380xxxxxxxxx", "name": "Alex",
+    "email": "alex@mail.com"
   }
 }
 
@@ -157,13 +157,13 @@ Request:
 ```
 Headers:
 {
-  “Authorization”: “eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A”
+  "Authorization": "eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A"
 }
 
 Body: 
 {
-  “title”: “Notebook”, //optional
-  “price”: 5500.00, //optional
+  "title": "Notebook", //optional
+  "price": 5500.00, //optional
 }
 
 ```
@@ -172,15 +172,15 @@ Responses:
 200, OK
 Body:
 {
-  “id”: 1,
-  “created_at”: <timestamp in seconds>, 
-  “title”: “Notebook”, 
-  “price”: 5500.00,
-  “image”: “http://example.com/images/**/*.jpg”, “user_id”: 12,
-  “user”: {
-    “id”: 1,
-    “phone”: “+380xxxxxxxxx”, “name”: “Alex”,
-    “email”: “alex@mail.com”
+  "id": 1,
+  "created_at": <timestamp in seconds>, 
+  "title": "Notebook", 
+  "price": 5500.00,
+  "image": "http://example.com/images/**/*.jpg", "user_id": 12,
+  "user": {
+    "id": 1,
+    "phone": "+380xxxxxxxxx", "name": "Alex",
+    "email": "alex@mail.com"
   }
 }
 
@@ -203,13 +203,13 @@ Request:
 ```
 Headers:
 {
-  “Authorization”: “eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A”
+  "Authorization": "eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A"
 }
 
 Body: 
 {
-  “title”: “Notebook”, //optional
-  “price”: 5500.00, //optional
+  "title": "Notebook", //optional
+  "price": 5500.00, //optional
 }
 ```
 Responses:
@@ -235,13 +235,13 @@ Request:
 ```
 Headers:
 {
-  “Authorization”: “eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A”
+  "Authorization": "eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A"
 }
 
 Body: 
 {
-  “title”: “Notebook”, //required
-  “price”: 5500.00, //required
+  "title": "Notebook", //required
+  "price": 5500.00, //required
 }
 ```
 Responses:
@@ -249,15 +249,15 @@ Responses:
 200, OK
 Body:
 {
-  “id”: 1,
-  “created_at”: <timestamp in seconds>, 
-  “title”: “Notebook”, “price”: 5500.00,
-  “image”: “http://example.com/images/**/*.jpg”, 
-  “user_id”: 12,
-  “user”: {
-  “id”: 1,
-  “phone”: “+380xxxxxxxxx”, “name”: “Alex”,
-  “email”: “alex@mail.com”
+  "id": 1,
+  "created_at": <timestamp in seconds>, 
+  "title": "Notebook", "price": 5500.00,
+  "image": "http://example.com/images/**/*.jpg", 
+  "user_id": 12,
+  "user": {
+  "id": 1,
+  "phone": "+380xxxxxxxxx", "name": "Alex",
+  "email": "alex@mail.com"
   } 
 }
 
@@ -271,8 +271,8 @@ Request:
 ```
 Headers:
 {
-  “Authorization”: “eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A”
-  “Content-Type”: “multipart/form-data”
+  "Authorization": "eyJhbGciOiJIUNiJ9.Mw.oAxY8cg69l1gnfVkl8VU5LcJhT3pQbwLDUx5A"
+  "Content-Type": "multipart/form-data"
 }
 
 Body:
@@ -283,15 +283,15 @@ Responses:
 200, OK
 Body:
 {
-  “id”: 1,
-  “created_at”: <timestamp in seconds>, 
-  “title”: “Notebook”, “price”: 5500.00,
-  “image”: “http://example.com/images/**/*.jpg”, 
-  “user_id”: 12,
-  “user”: {
-  “id”: 1,
-  “phone”: “+380xxxxxxxxx”, “name”: “Alex”,
-  “email”: “alex@mail.com”
+  "id": 1,
+  "created_at": <timestamp in seconds>, 
+  "title": "Notebook", "price": 5500.00,
+  "image": "http://example.com/images/**/*.jpg", 
+  "user_id": 12,
+  "user": {
+  "id": 1,
+  "phone": "+380xxxxxxxxx", "name": "Alex",
+  "email": "alex@mail.com"
   } 
 }
 
