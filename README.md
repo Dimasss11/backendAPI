@@ -127,7 +127,7 @@ Responses:
 
 
 ### Get item by ID 
-#### GET /api/items/<id>
+#### GET /api/items/{id}
 Responses:
 ```
 200, OK
@@ -152,7 +152,7 @@ Body: empty
 
 
 ### Update item 
-#### PUT /api/items/<id>
+#### PUT /api/items/{id}
 Request:
 ```
 Headers:
@@ -198,7 +198,7 @@ Body: empty
 ```
 
 ### Delete item 
-#### DELETE /api/items/<id> 
+#### DELETE /api/items/{id} 
 Request:
 ```
 Headers:
@@ -229,7 +229,7 @@ Body: empty
 ```
 
 
-### Delete item 
+### Create item 
 #### POST /api/items  
 Request:
 ```
@@ -266,7 +266,7 @@ Body: empty
 ```
 
 ### Upload item image
-#### POST /api/items/<id>/images  
+#### POST /api/items/{id}/images  
 Request:
 ```
 Headers:
